@@ -17,6 +17,7 @@ package com.example.forage.ui.viewmodel
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
+import androidx.lifecycle.asLiveData
 import androidx.lifecycle.viewModelScope
 import com.example.forage.data.ForageableDao
 import com.example.forage.model.Forageable
@@ -32,9 +33,9 @@ class ForageableViewModel(
     private val dao: ForageableDao
 ): ViewModel() {
 
-    val forageables = dao.getForageables()
+    val forageables = dao.getForageables().asLiveData()
 
-    fun getForageable(id: Long) = dao.getForageable(id)
+    fun getForageable(id: Long) = dao.getForageable(id).asLiveData()
 
     fun addForageable(
         name: String,

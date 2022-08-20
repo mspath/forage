@@ -15,10 +15,10 @@ This app is based on the [Project Forage app] Codelab.
 
 Environment
 
-- Kotlin 1.6.21
+- Kotlin 1.7.10
 - Android Studio Chipmunk 2021.2.1
-- Gradle Plugin 7.2.0
+- Gradle Plugin 7.2.2
 
 ----
 
-updated: 2022-05-11
+updated: 2022-08-20

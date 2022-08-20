@@ -23,8 +23,6 @@ import com.example.forage.data.ForageDatabase
  * instance of the [ForageDatabase]
  */
 class BaseApplication : Application() {
-
-    // TODO: provide a ForageDatabase value by lazy here
     val database by lazy {
         ForageDatabase.getDatabase(this.applicationContext)
     }
